@@ -1,0 +1,82 @@
+/* Container for the category */
+.category {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    color: black;
+  }
+  
+  /* Heading and description */
+  .category p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .category h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Image container with Grid layout */
+  .image-category {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 4 columns in total */
+    gap: 15px; /* Space between images */
+    margin-top: 30px;
+    /* grid-template-rows: repeat(2, auto); Make sure rows are flexible */
+  }
+  
+  /* Individual images with different sizes */
+  .image-category img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image1 {
+    grid-column: span 2; /* Takes up 2 columns */
+    grid-row: span 1;    /* Takes up 2 rows */
+  }
+  
+  .image2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .image3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .image4 {
+    grid-column: span 2; /* Takes up 2 columns */
+    grid-row: span 1;    /* Takes up 1 row */
+  }
+  
+  .image5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .image6 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .image7 {
+    grid-column: span 2; /* Takes up 2 columns */
+    grid-row: span 2;    /* Takes up 2 rows */
+  }
+  
+  .image8 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  /* Hover effect to add interaction */
+  .image-category img:hover {
+    transform: scale(1.05); /* Slightly increase image size on hover */
+  }
+  

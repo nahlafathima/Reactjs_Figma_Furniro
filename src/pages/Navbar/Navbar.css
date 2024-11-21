@@ -1,0 +1,64 @@
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 60px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .logo img {
+    height: 30px;
+    width: auto;
+    align-items: center;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: black;
+    gap: 50px;
+  }
+  .menu li {
+    margin: 0 10px; 
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .menu li:hover {
+    color: #ff6347;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    margin-left: 5px; 
+    gap: 50px;
+    margin-right: 5%;
+  }
+  .icons a {
+    display: inline-block;
+  }
+  .icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  .icons a:hover img {
+    transform: scale(1.1);
+  }
+  .cart-count,
+  .search,
+  .love,
+  .cart {
+    width: 25px;
+    height: 25px;
+  }
+  

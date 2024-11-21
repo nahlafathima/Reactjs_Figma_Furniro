@@ -1,0 +1,64 @@
+/* Styling for each product item */
+.item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Hover effect for product items */
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Product title styling */
+  .item h3 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Product description styling */
+  .item p {
+    font-size: 0.875rem;
+    color: #777;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  /* Price section styling */
+  .price {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Old price styling */
+  .old-price {
+    font-size: 1rem;
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  
+  /* New price styling */
+  .new-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e60000;
+  }
+  

@@ -1,0 +1,56 @@
+/* Container for inspiration section */
+.inspiration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    color: black;
+    background-color: antiquewhite;
+  }
+  
+  /* Left section: Text and button */
+  .inspiration-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .inspiration-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .inspiration-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .inspiration-button {
+    background-color: #b58850;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .inspiration-button:hover {
+    background-color: #b58850;
+  }
+  
+  /* Right section: Image */
+  .img-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
