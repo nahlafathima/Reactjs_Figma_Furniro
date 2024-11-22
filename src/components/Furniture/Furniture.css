@@ -1,4 +1,4 @@
-/* Container for the category */
+
 .category {
     text-align: center;
     padding: 40px;
@@ -6,7 +6,6 @@
     color: black;
   }
   
-  /* Heading and description */
   .category p {
     font-size: 1.5rem;
     font-weight: 300;
@@ -18,65 +17,91 @@
     margin-top: 10px;
   }
   
-  /* Image container with Grid layout */
-  .image-category {
+  
+  .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 4 columns in total */
-    gap: 15px; /* Space between images */
+    grid-template-columns: repeat(30, 2fr); 
+  
+    gap: 15px; 
     margin-top: 30px;
-    /* grid-template-rows: repeat(2, auto); Make sure rows are flexible */
+    z-index: -1;
+    padding-left: 10%;
   }
   
-  /* Individual images with different sizes */
-  .image-category img {
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  
+  .gallery-item img {
     width: 100%;
     height: auto;
-    border-radius: 3px;
+    object-fit: cover;
     transition: transform 0.3s ease;
   }
   
-  .image1 {
-    grid-column: span 2; /* Takes up 2 columns */
-    grid-row: span 1;    /* Takes up 2 rows */
+  .gallery-item:hover img {
+    transform: scale(1.05); 
   }
   
-  .image2 {
-    grid-column: span 1;
+  
+  .item1 {
+    grid-column: span 8;
     grid-row: span 1;
   }
   
-  .image3 {
-    grid-column: span 1;
+  .item2 {
+    grid-column: span 4;
     grid-row: span 1;
   }
   
-  .image4 {
-    grid-column: span 2; /* Takes up 2 columns */
-    grid-row: span 1;    /* Takes up 1 row */
+  .item3 {
+    grid-column: span 6;
+    grid-row: span 2;
   }
   
-  .image5 {
-    grid-column: span 1;
+  .item4 {
+    grid-column: span 8;
     grid-row: span 1;
   }
   
-  .image6 {
-    grid-column: span 1;
-    grid-row: span 1;
+  .item5 {
+    grid-column: span 6;
+    grid-row: span 2;
   }
   
-  .image7 {
-    grid-column: span 2; /* Takes up 2 columns */
-    grid-row: span 2;    /* Takes up 2 rows */
+  .item6 {
+    grid-column: span 8;
+    grid-row: span 5;
   }
   
-  .image8 {
-    grid-column: span 1;
-    grid-row: span 1;
+  .item7 {
+    grid-column: span 6;
+    grid-row: span 4;
   }
   
-  /* Hover effect to add interaction */
-  .image-category img:hover {
-    transform: scale(1.05); /* Slightly increase image size on hover */
+  .item8 {
+    grid-column: span 4;
+    grid-row: span 6;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .gallery-grid {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 10px;
+    }
+  
+    .gallery-item {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
   }
   

@@ -19,6 +19,7 @@
     gap: 50px;
     justify-items: center;
     
+    
   }
    .product-button{
     padding: 12px 30px;
@@ -31,5 +32,9 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     color: #b58850;
+    
+   }
+   .product-button:hover{
+    border-color: #b58850;
     
    }

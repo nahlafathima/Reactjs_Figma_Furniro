@@ -1,4 +1,4 @@
-/* Styling for each product item */
+
 .item {
     background-color: #fff;
     padding: 15px;
@@ -9,13 +9,13 @@
     width: 100%;
   }
   
-  /* Hover effect for product items */
+  
   .item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Image styling */
+
   .item img {
     width: 100%;
     height: auto;
@@ -23,7 +23,7 @@
     object-fit: cover;
   }
   
-  /* Product title styling */
+ 
   .item h3 {
     font-size: 1.25rem;
     margin-top: 15px;
@@ -31,7 +31,7 @@
     color: #333;
   }
   
-  /* Product description styling */
+
   .item p {
     font-size: 0.875rem;
     color: #777;
@@ -39,7 +39,7 @@
     line-height: 1.5;
   }
   
-  /* Price section styling */
+  
   .price {
     margin-top: 15px;
     display: flex;
@@ -47,7 +47,7 @@
     align-items: center;
   }
   
-  /* Old price styling */
+
   .old-price {
     font-size: 1rem;
     color: #888;
@@ -55,7 +55,7 @@
     margin-right: 10px;
   }
   
-  /* New price styling */
+ 
   .new-price {
     font-size: 1.2rem;
     font-weight: bold;

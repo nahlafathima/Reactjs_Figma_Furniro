@@ -2,9 +2,17 @@ import React from 'react'
 import collections from '../../../src/Products'
 import Items from '../Items/Items'
 import './Products_home.css'
+import { useNavigate } from 'react-router-dom'
 
 
 const Products_home = () => {
+    const navigate = useNavigate();
+
+    const handleNavigation = ()=>{
+        navigate('/')
+        window.scrollTo({top:0 , behavior: 'smooth'})
+    }
+
   return (
     <div className='collections'>
       <h1>Our Products</h1>
@@ -23,7 +31,7 @@ const Products_home = () => {
             );
         })}
       </div>
-      <button className='product-button'>Show More</button>
+      <button className='product-button' onClick={()=> handleNavigation('/')}>Show More</button>
     </div>
   )
 }

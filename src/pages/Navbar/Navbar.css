@@ -27,6 +27,16 @@
     padding: 0;
     color: black;
     gap: 50px;
+
+  }
+  Link{
+    text-decoration: none;
+  }
+  a {
+  color: black;
+  }
+  a:hover{
+    color: #ff6347;
   }
   .menu li {
     margin: 0 10px; 

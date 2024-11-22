@@ -6,9 +6,15 @@ import heart from '../../assets/images/heart.png'
 import cart from '../../assets/images/cart.png'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import { useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+    const handleNavigation = ()=>{
+        navigate('/')
+    }
   return (
     <div>
       <div className='navbar'>
@@ -17,10 +23,10 @@ const Navbar = () => {
             
         </div>
         <ul className='menu'>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li onClick={()=>handleNavigation('/')}>Home</li>
+            <li><Link to='/shop'>Shop</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
         </ul>
         <div className='icons'>
             <Link className='cart-count'><img src={cartcount} alt="Logo" /></Link>

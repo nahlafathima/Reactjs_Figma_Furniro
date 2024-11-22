@@ -11,18 +11,34 @@ import image8 from '../../assets/images/8.png';
 
 const Furniture = () => {
   return (
-    <div className='category'>
+    <div className="category">
       <p>Share your setup with</p>
-      <h2>#FurniroFurniture</h2>
-      <div className='image-category'>
-        <img className='image1' src={image1} alt="Image 1" />
-        <img className='image2' src={image2} alt="Image 2" />
-        <img className='image3' src={image3} alt="Image 3" />
-        <img className='image4' src={image4} alt="Image 4" />
-        <img className='image5' src={image5} alt="Image 5" />
-        <img className='image6' src={image6} alt="Image 6" />
-        <img className='image7' src={image7} alt="Image 7" />
-        <img className='image8' src={image8} alt="Image 8" />
+      <h2>#FuniroFurniture</h2>
+      <div className="gallery-grid">
+        <div className="gallery-item item1">
+          <img src={image1} alt="Furniture piece 1" />
+        </div>
+        <div className="gallery-item item2">
+          <img src={image2} alt="Furniture piece 2" />
+        </div>
+        <div className="gallery-item item3">
+          <img src={image3} alt="Furniture piece 3" />
+        </div>
+        <div className="gallery-item item4">
+          <img src={image4} alt="Furniture piece 4" />
+        </div>
+        <div className="gallery-item item5">
+          <img src={image5} alt="Furniture piece 5" />
+        </div>
+        <div className="gallery-item item6">
+          <img src={image6} alt="Furniture piece 6" />
+        </div>
+        <div className="gallery-item item7">
+          <img src={image7} alt="Furniture piece 7" />
+        </div>
+        <div className="gallery-item item8">
+          <img src={image8} alt="Furniture piece 8" />
+        </div>
       </div>
     </div>
   );

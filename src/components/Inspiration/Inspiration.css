@@ -1,4 +1,4 @@
-/* Container for inspiration section */
+
 .inspiration {
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     background-color: antiquewhite;
   }
   
-  /* Left section: Text and button */
+ 
   .inspiration-text {
     flex: 1;
     max-width: 50%;
@@ -42,7 +42,7 @@
     background-color: #b58850;
   }
   
-  /* Right section: Image */
+  
   .img-container {
     flex: 1;
     max-width: 50%;
