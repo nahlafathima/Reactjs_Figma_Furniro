@@ -9,6 +9,7 @@
     left: 0;
     width: 98%;
     height: 60px;
+    z-index: 999;
   }
   .logo {
     display: flex;
