@@ -38,3 +38,50 @@
     border-color: #b58850;
     
    }
+
+   @media (max-width: 1024px) {
+    .all-new-collections {
+      grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for medium screens */
+      gap: 40px; /* Reduce gap between items */
+    }
+  
+    .all-collections h1 {
+      font-size: 1.8rem; /* Slightly smaller font size for the heading */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .all-new-collections {
+      grid-template-columns: repeat(1, 1fr); /* Stack items vertically on small screens */
+      gap: 20px; /* Reduce gap for smaller devices */
+    }
+  
+    .all-collections {
+      padding: 20px; /* Reduce padding for small screens */
+    }
+  
+    .all-collections h1 {
+      font-size: 1.5rem; /* Adjust heading size further for mobile devices */
+    }
+  
+    .all-product-button {
+      font-size: 1rem; /* Reduce button text size for smaller screens */
+      padding: 10px 20px; /* Adjust padding for compact look */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .all-collections {
+      padding: 10px; /* Minimal padding for very small devices */
+    }
+  
+    .all-collections h1 {
+      font-size: 1.2rem; /* Smallest font size for the heading */
+    }
+  
+    .all-product-button {
+      font-size: 0.9rem; /* Compact button text size */
+      padding: 8px 15px; /* Compact padding for smaller buttons */
+    }
+  }
+  

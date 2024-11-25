@@ -72,3 +72,34 @@ a:hover{
   width: 25px;
   height: 25px;
 }
+
+/* Media query for screens 480px and smaller */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 10px; /* Minimal padding for small screens */
+  }
+
+  .logo img {
+    height: 25px; /* Reduce logo size */
+  }
+
+  .menu {
+    gap: 10px; /* Compact menu spacing */
+  }
+
+  .menu li {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .icons {
+    display: none; /* Hide the icons on screens 480px and smaller */
+  }
+
+  .cart-count,
+  .search,
+  .love,
+  .cart {
+    width: 20px;
+    height: 20px; /* Adjust additional icon sizes */
+  }
+}

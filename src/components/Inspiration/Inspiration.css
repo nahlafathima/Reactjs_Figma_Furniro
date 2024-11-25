@@ -54,3 +54,76 @@
     border-radius: 10px;
   }
   
+
+  @media (max-width: 1024px) {
+    .inspiration {
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start; /* Align items to the left */
+      gap: 20px; /* Reduce the gap */
+      padding: 30px; /* Adjust padding for medium screens */
+    }
+  
+    .inspiration-text {
+      max-width: 100%; /* Full-width text */
+      text-align: center; /* Center-align text for better readability */
+    }
+  
+    .inspiration-text h1 {
+      font-size: 2.5rem; /* Reduce heading size */
+    }
+  
+    .inspiration-text p {
+      font-size: 0.9rem; /* Slightly smaller text size */
+    }
+  
+    .inspiration-button {
+      margin: 20px auto 0; /* Center-align the button */
+    }
+  
+    .img-container {
+      max-width: 100%; /* Full-width image container */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .inspiration {
+      padding: 20px; /* Further reduce padding */
+    }
+  
+    .inspiration-text h1 {
+      font-size: 2rem; /* Smaller heading size */
+    }
+  
+    .inspiration-text p {
+      font-size: 0.8rem; /* Adjust text size */
+    }
+  
+    .inspiration-button {
+      padding: 8px 16px; /* Adjust button size */
+      font-size: 0.9rem; /* Smaller button text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .inspiration {
+      padding: 15px; /* Minimal padding for very small screens */
+    }
+  
+    .inspiration-text h1 {
+      font-size: 1.8rem; /* Smaller heading size */
+    }
+  
+    .inspiration-text p {
+      font-size: 0.8rem; /* Compact text size */
+    }
+  
+    .inspiration-button {
+      padding: 6px 12px; /* Smallest button size */
+      font-size: 0.8rem; /* Smaller button text */
+    }
+  
+    .img-container img {
+      border-radius: 5px; /* Adjust border radius */
+    }
+  }
+  

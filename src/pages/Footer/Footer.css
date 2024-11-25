@@ -98,3 +98,62 @@
     color: #333;
     font-size: 14px;
   }
+
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Stack all sections in a single column */
+      gap: 15px;
+      padding: 20px;
+    }
+  
+    .main h2, .links h2, .help h2, .newsletter h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .main p, .main address, .links li, .help li {
+      font-size: 14px; /* Smaller text size */
+      line-height: 25px; /* Adjust spacing */
+    }
+  
+    .newsletter-submit {
+      flex-direction: column; /* Stack input and button vertically */
+      gap: 10px;
+    }
+  
+    .newsletter-submit input {
+      width: 100%; /* Full width for input field */
+    }
+  
+    .newsletter-submit button {
+      width: 100%; /* Full width for the button */
+    }
+  
+    .footer-bottom {
+      text-align: center; /* Center-align footer text */
+    }
+  
+    .footer-bottom p {
+      font-size: 12px; /* Smaller font for footer text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px; /* Less padding for very small screens */
+    }
+  
+    .main h2, .links h2, .help h2, .newsletter h2 {
+      font-size: 18px; /* Smaller headers */
+    }
+  
+    .main p, .main address, .links li, .help li {
+      font-size: 12px; /* Adjust text for very small screens */
+      line-height: 20px;
+    }
+  
+    .footer-bottom p {
+      font-size: 10px; /* Minimal font size for footer text */
+    }
+  }
+  

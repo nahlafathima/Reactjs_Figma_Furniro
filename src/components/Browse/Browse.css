@@ -59,3 +59,50 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .browse {
+      padding: 20px 40px; /* Reduce padding for smaller screens */
+      text-align: center;
+    }
+  
+    .browse h1 {
+      font-size: 1.5rem; /* Slightly smaller font size */
+    }
+  
+    .browse p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+      line-height: 1.4;
+      margin-bottom: 20px; /* Reduce margin */
+    }
+  
+    .browse-category {
+      flex-direction: column; /* Stack items vertically */
+      gap: 15px; /* Smaller gap between categories */
+    }
+  
+    .list-category {
+      max-width: 90%; /* Limit width for better alignment */
+      margin: 0 auto; /* Center-align each category */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .browse {
+      padding: 10px 20px; /* Further reduce padding */
+    }
+  
+    .browse h1 {
+      font-size: 1.2rem; /* Reduce heading size for very small screens */
+    }
+  
+    .browse p {
+      font-size: 0.8rem; /* Further reduce paragraph font size */
+      line-height: 1.2;
+      margin-bottom: 15px; /* Adjust margin */
+    }
+  
+    .list-category img {
+      border-radius: 5px; /* Smaller border radius for small screens */
+    }
+  }
+  

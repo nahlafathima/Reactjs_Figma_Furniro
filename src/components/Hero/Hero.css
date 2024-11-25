@@ -74,7 +74,69 @@
     background-color: #b58850; 
     transform: scale(1.05); 
   }
+
   
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stack content vertically */
+      margin-top: 20px; /* Adjust margin for smaller screens */
+      height: auto; /* Allow height to adjust dynamically */
+    }
+  
+    .hero-box {
+      max-width: 80%; /* Reduce width of the hero box */
+      margin-left: 10%; /* Center the box horizontally */
+      margin-top: 10%; /* Adjust top margin */
+      padding: 15px; /* Slightly smaller padding */
+    }
+  
+    .hero-box h2 {
+      font-size: 14px; /* Smaller heading */
+    }
+  
+    .hero-box h1 {
+      font-size: 2rem; /* Reduce main heading size */
+    }
+  
+    .hero-box p {
+      font-size: 12px; /* Adjust paragraph font size */
+      line-height: 1.4;
+    }
+  
+    .hero-button {
+      font-size: 0.9rem; /* Smaller button text */
+      padding: 10px 20px; /* Adjust button size */
+      margin-right: 0; /* Center-align the button */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-box {
+      max-width: 90%; /* Even smaller width for very small screens */
+      margin-left: 5%; /* Center the box horizontally */
+      margin-top: 5%; /* Smaller top margin */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .hero-box h2 {
+      font-size: 12px; /* Smaller heading */
+    }
+  
+    .hero-box h1 {
+      font-size: 1.5rem; /* Further reduce heading size */
+    }
+  
+    .hero-box p {
+      font-size: 10px; /* Smaller paragraph text */
+      line-height: 1.2;
+    }
+  
+    .hero-button {
+      font-size: 0.8rem; /* Adjust button font size */
+      padding: 8px 15px; /* Adjust button padding */
+      margin-right: 0; /* Fully center the button */
+    }
+  }
   
   
   

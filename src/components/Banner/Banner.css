@@ -37,3 +37,59 @@
 .content p span {
     color: #000; 
 }
+
+@media (max-width: 1024px) {
+    .banner-container {
+      height: 250px; /* Reduce height for medium screens */
+    }
+  
+    .content h1 {
+      font-size: 36px; /* Smaller font size for heading */
+    }
+  
+    .content p {
+      font-size: 16px; /* Adjust font size for paragraph */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner-container {
+      height: 200px; /* Further reduce height for smaller screens */
+    }
+  
+    .content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 0 10px; /* Add padding for better fit */
+    }
+  
+    .content h1 {
+      font-size: 28px; /* Smaller heading size for mobile */
+    }
+  
+    .content p {
+      font-size: 14px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-container {
+      height: 180px; /* Minimal height for very small devices */
+    }
+  
+    .content {
+      text-align: center;
+      padding: 0 5px; /* Compact padding for smaller devices */
+    }
+  
+    .content h1 {
+      font-size: 22px; /* Smaller heading for very small screens */
+    }
+  
+    .content p {
+      font-size: 12px; /* Compact paragraph font size */
+    }
+  }
+  
