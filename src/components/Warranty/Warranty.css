@@ -1,0 +1,67 @@
+.warranty-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    align-items: center; 
+    background-color: bisque;
+    color: black;
+  }
+  
+  /* .warranty-container div { */
+    /* display: flex; */
+    /* align-items: center; Align image and text vertically */
+    /* gap: 15px; Space between image and text */
+  /* } */
+  
+  .warranty-container img {
+    width: 35px; 
+    height: auto; 
+  }
+  
+  .warranty-container h2 {
+    font-size: 15px; 
+    margin: 0; 
+    color: #333; 
+    
+  }
+  
+  .warranty-container span {
+    font-size: 16px;
+    margin: 5px 0 0 0; 
+    color: #666; 
+    align-items: left;
+    font-weight: normal;
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  @media (max-width: 768px) {
+    .warranty-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .warranty-container img {
+      width: 70px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .warranty-container {
+      grid-template-columns: 1fr; 
+    }
+  
+    .warranty-container div {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+    }
+  
+    .warranty-container img {
+      width: 60px; 
+    }
+  }
+  

@@ -1,12 +1,12 @@
 import React from 'react'
 import Banner_singlepage from '../components/banner_singlepage/banner_singlepage'
 
-const About = () => {
+const Single_page = () => {
   return (
     <div>
-      <Banner_singlepage/>
+      <Banner_singlepage />
     </div>
   )
 }
 
-export default About
+export default Single_page

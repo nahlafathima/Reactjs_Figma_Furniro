@@ -1,0 +1,19 @@
+.page-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px; 
+    background-color: antiquewhite; 
+    color: black;
+    margin-top: 5%;
+    
+}
+.page-row{
+    display: flex;
+    align-items: left;
+    gap: 15px; 
+}
+.page-row img{
+    height: 24px;
+    width: 24px;
+}

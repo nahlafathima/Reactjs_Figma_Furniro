@@ -3,6 +3,7 @@
     padding: 40px 160px;
     text-align: center;
     background-color: #f7f7f7; 
+    overflow-x: hidden;
    }
   
   .browse h1 {
