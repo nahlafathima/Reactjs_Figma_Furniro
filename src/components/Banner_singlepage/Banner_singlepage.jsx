@@ -8,7 +8,7 @@ const Banner_singlepage = (props) => {
   return (
     <div className='page-container'>
       <div className='page-row'>
-        Home <img src={arrow} alt=''/> Shop<img src={arrow} alt=''/>
+        Home <img src={arrow} alt=''/> Shop<img src={arrow} alt=''/>{product.name}
       </div>
     </div>
   )

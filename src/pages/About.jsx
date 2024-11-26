@@ -1,10 +1,12 @@
-import React from 'react'
-import Banner_singlepage from '../components/banner_singlepage/banner_singlepage'
+import React, { useContext } from 'react'
+
 
 const About = () => {
+   
+
   return (
     <div>
-      <Banner_singlepage/>
+      
     </div>
   )
 }

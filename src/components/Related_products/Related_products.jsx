@@ -1,23 +1,21 @@
 import React from 'react'
-import allcollections from '../../../src/Product_all_shop'
-import './All_products.css'
+import collections from '../../../src/Products'
+import Items from '../Items/Items'
+import './Related_products.css'
 import { useNavigate } from 'react-router-dom'
 
-import Items from '../Items/Items'
-
-
-const All_products = () => {
+const Related_products = () => {
     const navigate = useNavigate();
 
     const handleNavigation = ()=>{
         navigate('/shop')
         window.scrollTo({top:0 , behavior: 'smooth'})
     }
-
   return (
-    <div className='all-collections'>
-      <div className='all-new-collections'>
-        {allcollections.map((item,i)=>{
+    <div className='related-collections'>
+      <h1>Related Products</h1>
+      <div className='related-new-collections'>
+        {collections.map((item,i)=>{
             return(
                 <Items
                 key={i}
@@ -31,9 +29,9 @@ const All_products = () => {
             );
         })}
       </div>
-      <button className='all-product-button' onClick={()=> handleNavigation('/')}>Show More</button>
+      <button className='related-product-button' onClick={()=> handleNavigation('/shop')}>Show More</button>
     </div>
   )
 }
 
-export default All_products
+export default Related_products

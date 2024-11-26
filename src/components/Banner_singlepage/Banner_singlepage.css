@@ -5,7 +5,7 @@
     padding: 20px 40px; 
     background-color: antiquewhite; 
     color: black;
-    margin-top: 5%;
+    margin-top: 4.5%;
     
 }
 .page-row{
@@ -16,4 +16,94 @@
 .page-row img{
     height: 24px;
     width: 24px;
+}
+
+/* Style adjustments for very large screens (e.g., 2056px) */
+@media (max-width: 2566px) {
+    .page-container {
+        padding: 40px 80px; /* Increase padding for larger screens */
+        gap: 50px; /* Add spacing for better distribution */
+        margin-top: 50px;
+    }
+
+    .page-row img {
+        height: 32px; /* Larger icons */
+        width: 32px;
+    }
+}
+
+/* Style adjustments for large screens (e.g., 1440px) */
+@media (min-width: 1440px) and (max-width: 2055px) {
+    .page-container {
+        padding: 30px 60px; /* Moderate padding */
+    }
+
+    .page-row img {
+        height: 28px; /* Slightly larger icons */
+        width: 28px;
+    }
+}
+
+/* Style adjustments for medium screens (1024px to 1439px) */
+@media (max-width: 1441px) {
+    .page-container {
+        padding: 20px 40px; /* Default padding */
+        margin-top: 60px;
+    }
+
+    .page-row img {
+        height: 24px; /* Default icon size */
+        width: 24px;
+    }
+}
+
+/* Style adjustments for smaller screens (768px to 1023px) */
+@media (max-width: 1023px) {
+    .page-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        padding: 15px 30px; /* Reduced padding */
+    }
+
+    .page-row img {
+        height: 22px; /* Smaller icons */
+        width: 22px;
+    }
+}
+
+/* Style adjustments for small devices (480px to 767px) */
+@media (max-width: 769px) {
+    .page-container {
+        padding: 10px 20px; /* Further reduced padding */
+        margin-top: 60px;
+    }
+
+    .page-row img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* Style adjustments for extra small devices (less than 480px) */
+@media (max-width: 479px) {
+    .page-container {
+        padding: 5px 15px;
+        margin-top: 60px;
+    }
+
+    .page-row img {
+        height: 18px; /* Smallest icon size */
+        width: 18px;
+    }
+}
+@media (max-width: 330px) {
+    .page-container {
+        padding: 5px 15px;
+        margin-top: 60px;
+    }
+
+    .page-row img {
+        height: 18px; /* Smallest icon size */
+        width: 18px;
+    }
 }
