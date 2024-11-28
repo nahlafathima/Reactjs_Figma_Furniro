@@ -1,53 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Logo from '../../assets/images/logo.png';
-import cartcount from '../../assets/images/cart-count.png';
 import search from '../../assets/images/search.png';
 import heart from '../../assets/images/heart.png';
-import cart from '../../assets/images/cart.png';
-import { Link } from 'react-router-dom';
+import cart1 from '../../assets/images/cart.png';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import { useNavigate } from 'react-router-dom';
+import { Shopcontext } from '../../Context/Shopcontext';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+
+  // Access cart from context
+  const { cart } = useContext(Shopcontext);
+
+  // Calculate total cart items
+  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+ 
+  
 
   const handleNavigation = (path) => {
     navigate(path);
-    setMenuOpen(false); 
+    setMenuOpen(false); // Close menu after navigation
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); 
+    setMenuOpen(!menuOpen); // Toggle menu state
   };
 
   return (
     <div>
-      <div className='navbar'>
-        
-        <div className='logo'>
+      <div className="navbar">
+        <div className="logo">
           <img src={Logo} alt="Logo" />
         </div>
 
-        
-        <div className='icons-mobile' onClick={toggleMenu}>
+        <div className="icons-mobile" onClick={toggleMenu}>
           <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`} />
         </div>
 
-        
         <ul className={`menu ${menuOpen ? 'menu-open' : ''}`}>
           <li onClick={() => handleNavigation('/')}>Home</li>
-          <li><Link to='/shop' onClick={() => setMenuOpen(false)}>Shop</Link></li>
-          <li><Link to='/about' onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link to='/contact' onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          <li><Link to="/shop" onClick={() => setMenuOpen(false)}>Shop</Link></li>
+          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
 
-        
-        <div className='icons'>
-          <Link className='cart-count'><img src={cartcount} alt="Cart Count" /></Link>
-          <Link className='search'><img src={search} alt="Search" /></Link>
-          <Link className='love'><img src={heart} alt="Wishlist" /></Link>
-          <Link className='cart'><img src={cart} alt="Cart" /></Link>
+        <div className="icons">
+          <Link className="search"><img src={search} alt="Search Icon" /></Link>
+          <Link className="love"><img src={heart} alt="Wishlist Icon" /></Link>
+          <Link to="/cart" className="cart"><img src={cart1} alt="Cart Icon" /></Link>
+          <span className="cart-total">{cartCount}</span>
         </div>
       </div>
     </div>

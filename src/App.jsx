@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 import Footer from './pages/Footer/Footer';
 import Single_page from './pages/Single_page';
+import CartItem from './pages/CartItem';
 
 
 
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/product/:productId" element={<Single_page/>}/>
+                <Route path="/cart" element={<CartItem/>}/>
             </Routes>
             <Footer/>
         </Router>

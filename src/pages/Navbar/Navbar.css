@@ -75,6 +75,19 @@ a:hover {
   width: 25px;
   height: 25px;
 }
+.cart-total{
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: bisque;
+  color: black;
+}
 
 /* Responsive for devices */
 @media (max-width: 768px) {
