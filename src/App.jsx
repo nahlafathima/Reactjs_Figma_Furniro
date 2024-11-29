@@ -9,6 +9,9 @@ import Shop from './pages/Shop';
 import Footer from './pages/Footer/Footer';
 import Single_page from './pages/Single_page';
 import CartItem from './pages/CartItem';
+import CkeckOut from './pages/CkeckOut';
+import Success from './components/Success/Success';
+
 
 
 
@@ -27,6 +30,8 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/product/:productId" element={<Single_page/>}/>
                 <Route path="/cart" element={<CartItem/>}/>
+                <Route path="/checkout" element={<CkeckOut/>}/>
+                <Route path="/success" element={<Success/>}/>
             </Routes>
             <Footer/>
         </Router>

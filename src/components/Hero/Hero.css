@@ -79,7 +79,7 @@
   @media (max-width: 768px) {
     .hero {
       flex-direction: column; /* Stack content vertically */
-      margin-top: 20px; /* Adjust margin for smaller screens */
+      margin-top: 50px; /* Adjust margin for smaller screens */
       height: auto; /* Allow height to adjust dynamically */
     }
   
@@ -88,6 +88,8 @@
       margin-left: 10%; /* Center the box horizontally */
       margin-top: 10%; /* Adjust top margin */
       padding: 15px; /* Slightly smaller padding */
+      width: 50%;
+      
     }
   
     .hero-box h2 {
@@ -110,11 +112,13 @@
     }
   }
   
-  @media (max-width: 480px) {
+  @media (min-width: 425px) {
     .hero-box {
       max-width: 90%; /* Even smaller width for very small screens */
-      margin-left: 5%; /* Center the box horizontally */
-      margin-top: 5%; /* Smaller top margin */
+      margin-left: 8%; /* Center the box horizontally */
+      margin-top: 10%; /* Smaller top margin */
+      margin-right: 9%;
+      margin-bottom: 7%;
       padding: 10px; /* Reduce padding */
     }
   
@@ -138,5 +142,43 @@
     }
   }
   
-  
+  @media (max-width: 380px) {
+    .hero-box {
+        margin-top: 10%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 4%;
+      }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-box {
+        width: 50%;
+      }
+      
+  }
+  @media (max-width: 1440px) {
+    .hero-box {
+        width: 40%;
+        text-align: center;
+    background-color: #fdeedc;
+    padding: 20px; 
+    border-radius: 8px;
+    margin-left: 46%; 
+    margin-top: 5%;
+    height: 60%;
+      }
+      .hero-box h2 {
+        font-size: 14px; /* Smaller heading */
+      }
+    
+      .hero-box h1 {
+        font-size: 2rem; /* Further reduce heading size */
+      }
+    
+      .hero-box p {
+        font-size: 15px; /* Smaller paragraph text */
+        line-height: 2;
+      }
+  }
   

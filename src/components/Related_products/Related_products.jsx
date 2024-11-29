@@ -29,7 +29,7 @@ const Related_products = () => {
             );
         })}
       </div>
-      <button className='related-product-button' onClick={()=> handleNavigation('/shop')}>Show More</button>
+      <button className='related-product-button' onClick={()=> handleNavigation('/')}>Show More</button>
     </div>
   )
 }

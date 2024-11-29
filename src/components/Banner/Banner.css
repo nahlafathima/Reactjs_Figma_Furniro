@@ -6,6 +6,7 @@
     overflow: hidden;
     margin-top: 5%;
     padding-bottom: 8%;
+    background-color: white;
 }
 
 .banner-img img {
@@ -43,7 +44,7 @@
 @media (min-width: 2560px) {
     .banner-container {
         height: 650px; /* Adjust for ultra-high-resolution screens */
-        margin-top: 2%;
+        margin-top: -5%;
         margin-bottom: -80px;
     }
     .banner-img img {

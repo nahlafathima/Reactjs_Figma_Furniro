@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import './Cart.css';
 import { Shopcontext } from '../../Context/Shopcontext';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, removeFromCart } = useContext(Shopcontext);
+  const navigate = useNavigate();
 
   // Calculate the subtotal for each product
   const calculateSubtotal = (new_price, quantity) => new_price * quantity;
@@ -13,6 +15,10 @@ const Cart = () => {
     return cart.reduce((total, item) => total + item.new_price * item.quantity, 0);
   };
 
+  const handleNavigation = ()=>{
+    navigate('/Checkout')
+    window.scrollTo({top:0 , behavior: 'smooth'})
+}
   return (
     <div className="cart-container">
       <div className="cart-details">
@@ -66,12 +72,12 @@ const Cart = () => {
           <span>Total</span>
           <span>₹{calculateTotal()}</span>
         </div>
-        <button className="checkout-btn" disabled={cart.length === 0}>
-          Check Out
-        </button>
+        <button className="checkout-btn" disabled={cart.length === 0} onClick={()=> handleNavigation('/')}>Check Out</button>
       </div>
     </div>
   );
 };
 
 export default Cart;
+
+

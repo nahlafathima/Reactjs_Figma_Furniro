@@ -9,7 +9,7 @@ const Products_home = () => {
     const navigate = useNavigate();
 
     const handleNavigation = ()=>{
-        navigate('/')
+        navigate('/shop')
         window.scrollTo({top:0 , behavior: 'smooth'})
     }
 

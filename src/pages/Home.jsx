@@ -15,6 +15,7 @@ const Home = () => {
         <Products_home />
         <Inspiration />
         <Furniture />
+        
     </div>
   )
 }

@@ -3,6 +3,7 @@ import Logo from '../../assets/images/logo.png';
 import search from '../../assets/images/search.png';
 import heart from '../../assets/images/heart.png';
 import cart1 from '../../assets/images/cart.png';
+import cartcount from '../../assets/images/cart-count.png'
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import { Shopcontext } from '../../Context/Shopcontext';
@@ -21,6 +22,7 @@ const Navbar = () => {
 
   const handleNavigation = (path) => {
     navigate(path);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setMenuOpen(false); // Close menu after navigation
   };
 
@@ -32,7 +34,7 @@ const Navbar = () => {
     <div>
       <div className="navbar">
         <div className="logo">
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" onClick={() => handleNavigation('/')}/>
         </div>
 
         <div className="icons-mobile" onClick={toggleMenu}>
@@ -41,12 +43,13 @@ const Navbar = () => {
 
         <ul className={`menu ${menuOpen ? 'menu-open' : ''}`}>
           <li onClick={() => handleNavigation('/')}>Home</li>
-          <li><Link to="/shop" onClick={() => setMenuOpen(false)}>Shop</Link></li>
-          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          <li onClick={() => handleNavigation('/Shop')}>Shop</li>
+          <li onClick={() => handleNavigation('/About')}>About</li>
+          <li onClick={() => handleNavigation('/Contact')}>Contact</li>
         </ul>
 
         <div className="icons">
+          <Link className="cart-count"><img src={cartcount} alt="cart count" /></Link>
           <Link className="search"><img src={search} alt="Search Icon" /></Link>
           <Link className="love"><img src={heart} alt="Wishlist Icon" /></Link>
           <Link to="/cart" className="cart"><img src={cart1} alt="Cart Icon" /></Link>

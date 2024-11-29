@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom'
 const Footer = () => {
     const navigate = useNavigate();
 
-    const handleNavigation = ()=>{
-        navigate('/')
+    const handleNavigation = (path)=>{
+        navigate(path)
         window.scrollTo({top:0 , behavior: 'smooth'})
     }
   return (
@@ -21,9 +21,10 @@ const Footer = () => {
             <h2>Links</h2>
             <ul>
                 <li onClick={()=>handleNavigation('/')}>Home</li>
-                <li><Link to='/shop'>Shop</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li onClick={()=>handleNavigation('/Shop')}>Shop</li>
+                <li onClick={()=>handleNavigation('/About')}>About</li>
+                <li onClick={()=>handleNavigation('/Contact')}>Contact</li>
+                
             </ul>
         </div>
         <div className='help'>
