@@ -6,6 +6,7 @@ import Product_display from '../components/Product_display/Product_display';
 import Description from '../components/Description/Description';
 import Related_products from '../components/Related_products/Related_products';
 
+
 const Single_page = (props) => {
   const { allcollections } = useContext(Shopcontext); // Use `allcollections` here.
   const { productId } = useParams();
@@ -13,9 +14,9 @@ const Single_page = (props) => {
   return (
     <div>
       <Banner_singlepage product={product} />
-      <Product_display product={product}/>
-      <Description/>
-      <Related_products/>
+      <Product_display product={product} />
+      <Description />
+      <Related_products />
     </div>
   );
 };

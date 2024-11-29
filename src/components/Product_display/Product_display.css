@@ -137,6 +137,24 @@
     background-color: #a47c2b;
     border-color: #a47c2b;
   }
+  /* Example CSS for size selection buttons */
+.size-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .size-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .size-button.active {
+    background-color: #a47c2b; /* Highlighted color when selected */
+    color: white;
+  }
   
 
 

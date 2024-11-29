@@ -17,8 +17,8 @@ const Navbar = () => {
 
   // Calculate total cart items
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
- 
-  
+
+
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -34,7 +34,7 @@ const Navbar = () => {
     <div>
       <div className="navbar">
         <div className="logo">
-          <img src={Logo} alt="Logo" onClick={() => handleNavigation('/')}/>
+          <img src={Logo} alt="Logo" onClick={() => handleNavigation('/')} />
         </div>
 
         <div className="icons-mobile" onClick={toggleMenu}>

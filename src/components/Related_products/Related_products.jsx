@@ -7,31 +7,31 @@ import { useNavigate } from 'react-router-dom'
 const Related_products = () => {
     const navigate = useNavigate();
 
-    const handleNavigation = ()=>{
+    const handleNavigation = () => {
         navigate('/shop')
-        window.scrollTo({top:0 , behavior: 'smooth'})
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     }
-  return (
-    <div className='related-collections'>
-      <h1>Related Products</h1>
-      <div className='related-new-collections'>
-        {collections.map((item,i)=>{
-            return(
-                <Items
-                key={i}
-                id={item.id}
-                image_url={item.image_url}
-                name={item.name}
-                description={item.description}
-                old_price={item.old_price}
-                new_price={item.new_price}
-                />
-            );
-        })}
-      </div>
-      <button className='related-product-button' onClick={()=> handleNavigation('/')}>Show More</button>
-    </div>
-  )
+    return (
+        <div className='related-collections'>
+            <h1>Related Products</h1>
+            <div className='related-new-collections'>
+                {collections.map((item, i) => {
+                    return (
+                        <Items
+                            key={i}
+                            id={item.id}
+                            image_url={item.image_url}
+                            name={item.name}
+                            description={item.description}
+                            old_price={item.old_price}
+                            new_price={item.new_price}
+                        />
+                    );
+                })}
+            </div>
+            <button className='related-product-button' onClick={() => handleNavigation('/')}>Show More</button>
+        </div>
+    )
 }
 
 export default Related_products

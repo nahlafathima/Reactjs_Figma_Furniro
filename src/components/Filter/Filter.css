@@ -1,9 +1,10 @@
+/* Base Styles (Default for larger screens) */
 .filter-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 20px; 
-    background-color: antiquewhite; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: antiquewhite;
     color: black;
     margin-top: -3px;
 }
@@ -11,11 +12,11 @@
 .filter-img {
     display: flex;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
 }
 
 .filter-img img {
-    width: 24px; 
+    width: 24px;
     height: 24px;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .filter-text {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .filter-text p {
@@ -34,38 +35,117 @@
     margin: 0;
     color: #555;
 }
-.line-img img{
+
+.line-img img {
     height: 20px;
     margin-left: 20px;
     margin-top: 8px;
 }
+
 .sort-button {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .sort-button button {
     padding: 8px 16px;
     font-size: 14px;
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .sort-button button:hover {
-    background-color: #B88E2F; 
+    background-color: #B88E2F;
 }
 
-
+/* Medium Screen (Tablets, max-width: 768px) */
 @media (max-width: 768px) {
     .filter-container {
-        flex-wrap: wrap; /* Stack elements on smaller screens */
-        justify-content: center; /* Center elements horizontally */
+        flex-wrap: wrap; /* Stack elements */
+        justify-content: center; /* Center elements */
         text-align: center;
     }
 
+    .filter-img {
+        margin-bottom: 10px;
+    }
+
+    .filter-img img {
+        width: 20px; /* Slightly smaller images */
+        height: 20px;
+    }
+
+    .filter-img h2 {
+        font-size: 16px;
+    }
+
+    .filter-text {
+        margin-left: 0; /* Reset margins */
+    }
+
     .sort-button {
-        margin-top: 10px;
+        margin-top: 10px; /* Space for stacked layout */
+    }
+
+    .sort-button button {
+        width: 100%; /* Full width for small screens */
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Small Screen (Mobile, max-width: 480px) */
+@media (max-width: 480px) {
+    .filter-container {
+        padding: 10px;
+    }
+
+    .filter-img img {
+        width: 18px; /* Smaller icons */
+        height: 18px;
+    }
+
+    .filter-img h2 {
+        font-size: 14px; /* Smaller text */
+    }
+
+    .filter-text p {
+        font-size: 12px; /* Adjust paragraph size */
+    }
+
+    .sort-button button {
+        padding: 6px 10px; /* Compact button */
+        font-size: 12px; /* Smaller button text */
+    }
+
+    .line-img img {
+        height: 16px; /* Adjust image size */
+        margin-left: 10px; /* Reduce margin */
+    }
+}
+
+/* Extra Small Screen (Small phones, max-width: 360px) */
+@media (max-width: 360px) {
+    .filter-container {
+        flex-direction: row; /* Stack all elements */
+        align-items: center;
+    }
+    .filter-img{
+        text-align: center;
+    }
+    .filter-img h2 {
+        font-size: 12px;
+    }
+
+    .filter-text p {
+        font-size: 10px;
+    }
+
+    .sort-button button {
+        padding: 5px 8px;
+        font-size: 10px;
+        align-items: center;
     }
 }
