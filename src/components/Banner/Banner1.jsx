@@ -2,8 +2,18 @@ import React from 'react'
 import './Banner.css'
 import banner from '../../assets/images/banner.png'
 import logo1 from '../../assets/images/furniro_logo.png'
+import { useNavigate } from 'react-router-dom';
+
 
 const Banner1 = () => {
+
+    const navigate = useNavigate();
+
+    const handleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+      
     return (
         <div className='banner-container'>
             <div className='banner-img'>
@@ -12,7 +22,7 @@ const Banner1 = () => {
             <div className='content'>
                 <img src={logo1} alt=''></img>
                 <h1>Contact</h1>
-                <p><span>Home</span>  &gt; <span>Contact</span></p>
+                <p><span onClick={() => handleNavigation('/')}>Home</span>  &gt; <span>Contact</span></p>
             </div>
         </div>
     )
