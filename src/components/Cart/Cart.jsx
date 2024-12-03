@@ -16,8 +16,8 @@ const Cart = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
     return (
-        <div className="cart-container">
-            <div className="cart-details">
+        <div className="cart1-container">
+            <div className="cart1-details">
                 <table>
                     <thead>
                         <tr>
@@ -37,7 +37,7 @@ const Cart = () => {
                                     <td>{item.quantity}</td>
                                     <td>₹{calculateSubtotal(item.new_price, item.quantity)}</td>
                                     <td>
-                                        <button className="remove-btn" onClick={() => removeFromCart(item.id)}> x </button>
+                                        <button className="remove-btn1" onClick={() => removeFromCart(item.id)}> x </button>
                                     </td>
                                 </tr>
                             ))
@@ -49,7 +49,7 @@ const Cart = () => {
                     </tbody>
                 </table>
             </div>
-            <div className="cart-totals">
+            <div className="cart1-totals">
                 <h2>Cart Totals</h2>
                 <div className="totals-item">
                     <span>Subtotal</span>

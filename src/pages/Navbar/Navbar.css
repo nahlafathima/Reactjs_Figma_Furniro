@@ -57,7 +57,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: 5%;
+  margin-right: -7%;
 }
 
 .icons img {
@@ -105,15 +105,22 @@ a:hover {
     gap: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    
   }
 
   .menu.menu-open {
     display: flex;
   }
 
-  .icons {
-    display: none; /* Hide icons in tablet view */
+  .cart-count,
+  .search,
+  .love {
+    display: none;
+  }
+
+  .cart {
+    display: block;
+    margin-left: 400px;
+    margin-top: 5px;
   }
 
   .icons-mobile {
@@ -142,12 +149,67 @@ a:hover {
     font-size: 14px;
   }
 
-  .icons {
+  .cart-count,
+  .search,
+  .love {
     display: none;
+  }
+
+  .cart {
+    display: block;
+    margin-left: 100px;
   }
 
   .menu {
     gap: 5px;
     padding: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo img {
+    height: 20px;  /* Smaller logo for small screens */
+  }
+
+  .menu li {
+    font-size: 12px;  /* Reduce font size for small screens */
+  }
+
+  .cart-count,
+  .search,
+  .love {
+    display: none;
+  }
+
+  .cart {
+    display: block;
+    margin-left: ;
+  }
+
+  .menu {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .icons-mobile {
+    font-size: 20px;  /* Adjust icon size */
+  }
+}
+
+@media (max-width: 320px) {
+  .logo img {
+    height: 20px;  /* Smaller logo for very small screens */
+  }
+
+  .cart-count,
+  .search,
+  .love {
+    display: none;
+  }
+
+  .cart {
+    display: block;
+    margin-left: 25px;
+    margin-top: 2px;
   }
 }

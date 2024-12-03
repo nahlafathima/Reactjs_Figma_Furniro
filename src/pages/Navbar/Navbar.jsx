@@ -12,10 +12,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  // Access cart from context
   const { cart } = useContext(Shopcontext);
 
-  // Calculate total cart items
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
 
@@ -23,11 +21,11 @@ const Navbar = () => {
   const handleNavigation = (path) => {
     navigate(path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    setMenuOpen(false); // Close menu after navigation
+    setMenuOpen(false); 
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Toggle menu state
+    setMenuOpen(!menuOpen); 
   };
 
   return (
@@ -37,9 +35,7 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" onClick={() => handleNavigation('/')} />
         </div>
 
-        <div className="icons-mobile" onClick={toggleMenu}>
-          <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`} />
-        </div>
+       
 
         <ul className={`menu ${menuOpen ? 'menu-open' : ''}`}>
           <li onClick={() => handleNavigation('/')}>Home</li>
@@ -52,8 +48,12 @@ const Navbar = () => {
           <Link className="cart-count"><img src={cartcount} alt="cart count" /></Link>
           <Link className="search"><img src={search} alt="Search Icon" /></Link>
           <Link className="love"><img src={heart} alt="Wishlist Icon" /></Link>
-          <Link to="/cart" className="cart"><img src={cart1} alt="Cart Icon" /></Link>
+          <Link to="/Cart" className="cart"><img src={cart1} alt="Cart Icon"  /></Link>
           <span className="cart-total">{cartCount}</span>
+        </div>
+
+        <div className="icons-mobile" onClick={toggleMenu}>
+          <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`} />
         </div>
       </div>
     </div>

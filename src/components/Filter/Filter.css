@@ -1,4 +1,4 @@
-/* Base Styles (Default for larger screens) */
+
 .filter-container {
     display: flex;
     justify-content: space-between;
@@ -60,20 +60,15 @@
     background-color: #B88E2F;
 }
 
-/* Medium Screen (Tablets, max-width: 768px) */
+
 @media (max-width: 768px) {
     .filter-container {
-        flex-wrap: wrap; /* Stack elements */
-        justify-content: center; /* Center elements */
+        flex-wrap: wrap; 
+        justify-content: center; 
         text-align: center;
     }
-
-    .filter-img {
-        margin-bottom: 10px;
-    }
-
     .filter-img img {
-        width: 20px; /* Slightly smaller images */
+        width: 20px; 
         height: 20px;
     }
 
@@ -81,60 +76,56 @@
         font-size: 16px;
     }
 
-    .filter-text {
-        margin-left: 0; /* Reset margins */
-    }
-
-    .sort-button {
-        margin-top: 10px; /* Space for stacked layout */
-    }
+   
 
     .sort-button button {
-        width: 100%; /* Full width for small screens */
+        width: 100%; 
         font-size: 12px;
         padding: 6px 12px;
     }
 }
 
-/* Small Screen (Mobile, max-width: 480px) */
+
 @media (max-width: 480px) {
     .filter-container {
         padding: 10px;
     }
 
     .filter-img img {
-        width: 18px; /* Smaller icons */
+        width: 18px;
         height: 18px;
     }
 
     .filter-img h2 {
-        font-size: 14px; /* Smaller text */
+        font-size: 14px; 
     }
 
     .filter-text p {
-        font-size: 12px; /* Adjust paragraph size */
+        font-size: 12px; 
     }
 
     .sort-button button {
-        padding: 6px 10px; /* Compact button */
-        font-size: 12px; /* Smaller button text */
+        padding: 6px 10px; 
+        font-size: 12px;
     }
 
     .line-img img {
-        height: 16px; /* Adjust image size */
-        margin-left: 10px; /* Reduce margin */
+        height: 16px; 
+        margin-left: 10px; 
     }
 }
 
-/* Extra Small Screen (Small phones, max-width: 360px) */
+
 @media (max-width: 360px) {
     .filter-container {
-        flex-direction: row; /* Stack all elements */
+        flex-direction: row; 
         align-items: center;
     }
-    .filter-img{
+
+    .filter-img {
         text-align: center;
     }
+
     .filter-img h2 {
         font-size: 12px;
     }

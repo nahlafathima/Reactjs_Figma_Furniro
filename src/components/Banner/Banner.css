@@ -43,36 +43,35 @@
 /* Responsive styles */
 @media (min-width: 2560px) {
     .banner-container {
-        height: 650px; /* Adjust for ultra-high-resolution screens */
+        height: 650px; 
         margin-top: -5%;
         margin-bottom: -80px;
     }
     .banner-img img {
-        width: 100%; /* Ensure image covers full width */
-        /* height: 100%;  */
+        width: 100%; 
     }
     .content h1 {
-        font-size: 52px; /* Larger heading for high-resolution screens */
+        font-size: 52px; 
     }
 
     .content p {
-        font-size: 20px; /* Adjust paragraph font size */
+        font-size: 20px;
     }
 }
 
 @media (max-width: 1440px) {
     .banner-container {
-        height: 250px; /* Adjust for large desktop screens */
+        height: 250px; 
         margin-top: 55px;
         margin-bottom: 1px;
     }
 
     .content h1 {
-        font-size: 48px; /* Slightly smaller heading for medium screens */
+        font-size: 48px; 
     }
 
     .content p {
-        font-size: 18px; /* Adjust paragraph font size */
+        font-size: 18px; 
     }
 }
 
