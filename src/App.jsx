@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename='/Reactjs_Figma_Furniro'>
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Home />} />
