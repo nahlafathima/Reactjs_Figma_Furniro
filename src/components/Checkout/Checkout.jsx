@@ -59,9 +59,8 @@ const Checkout = () => {
             return;
         }
         clearCart();
-        // Proceed with placing the order
-        console.log('Order placed successfully:', formData, cart, paymentMethod);
-
+        
+        
         // Clear form after placing the order
         setFormData({
             firstName: '',

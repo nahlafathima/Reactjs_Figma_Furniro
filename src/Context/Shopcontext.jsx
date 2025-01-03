@@ -40,7 +40,7 @@ const ShopcontextProvider = (props) => {
     };
 
     const clearCart = () => {
-        setCart([]); // Assuming `setCart` is used to manage the cart state
+        setCart([]); 
     };
 
     const toggleCart = () => {

@@ -90,6 +90,74 @@ a:hover {
   background: bisque;
   color: black;
 }
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  
+}
+
+.search-input {
+  display: none;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px;
+}
+
+.search-container.active .search-input {
+  display: block;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.search-results {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  width: 250px;
+  z-index: 999;
+  border-radius: 5px;
+  margin-top: 5px;
+  max-width: 400px;
+  width: 300px;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-item:hover {
+  background-color: #f4f4f4;
+}
+
+.search-item-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.search-item span {
+  font-size: 14px;
+  color: black;
+}
+
+.no-results {
+  padding: 10px;
+  color: #777;
+}
 
 /* Responsive for devices */
 @media (max-width: 768px) {

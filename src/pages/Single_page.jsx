@@ -8,9 +8,9 @@ import Related_products from '../components/Related_products/Related_products';
 
 
 const Single_page = (props) => {
-  const { allcollections } = useContext(Shopcontext); // Use `allcollections` here.
+  const { allcollections } = useContext(Shopcontext); 
   const { productId } = useParams();
-  const product = allcollections.find((e) => e.id === Number(productId)); // Use `allcollections`.
+  const product = allcollections.find((e) => e.id === Number(productId)); 
   return (
     <div>
       <Banner_singlepage product={product} />

@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .product-display-container {
   display: flex;
   gap: 40px;
@@ -236,7 +236,20 @@ button:hover {
   opacity: 0.9;
 }
 
-/* Responsive Design */
+.cart-close-button {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  background: transparent;
+  border: 1 solid;
+  font-size: 12px;
+  cursor: pointer;
+  width: 30px;
+  height: 35px;
+  padding: 5px;
+}
+
+
 @media (max-width: 1024px) {
   .product-display-container {
     flex-direction: column;

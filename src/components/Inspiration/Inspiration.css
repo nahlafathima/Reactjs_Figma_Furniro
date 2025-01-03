@@ -1,129 +1,102 @@
-
 .inspiration {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.inspiration-text {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.inspiration-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.inspiration-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.inspiration-button {
+  background-color: #b58850;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inspiration-button:hover {
+  background-color: #a47545;
+}
+
+.slider-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .inspiration {
+    flex-direction: column;
     align-items: center;
-    padding: 40px;
-    gap: 40px;
-    color: black;
-    background-color: antiquewhite;
+    text-align: center;
   }
-  
- 
+
   .inspiration-text {
-    flex: 1;
-    max-width: 50%;
-    text-align: left;
+    max-width: 80%;
   }
-  
+
+  .slider-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .inspiration-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 2.5rem;
   }
-  
+
   .inspiration-text p {
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
   }
-  
-  .inspiration-button {
-    background-color: #b58850;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 1px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .inspiration-button:hover {
-    background-color: #b58850;
-  }
-  
-  
-  .img-container {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .img-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
 
-  @media (max-width: 1024px) {
-    .inspiration {
-      flex-direction: column; /* Stack content vertically */
-      align-items: flex-start; /* Align items to the left */
-      gap: 20px; /* Reduce the gap */
-      padding: 30px; /* Adjust padding for medium screens */
-    }
-  
-    .inspiration-text {
-      max-width: 100%; /* Full-width text */
-      text-align: center; /* Center-align text for better readability */
-    }
-  
-    .inspiration-text h1 {
-      font-size: 2.5rem; /* Reduce heading size */
-    }
-  
-    .inspiration-text p {
-      font-size: 0.9rem; /* Slightly smaller text size */
-    }
-  
-    .inspiration-button {
-      margin: 20px auto 0; /* Center-align the button */
-    }
-  
-    .img-container {
-      max-width: 100%; /* Full-width image container */
-    }
+  .inspiration-button {
+    padding: 8px 16px;
   }
-  
-  @media (max-width: 768px) {
-    .inspiration {
-      padding: 20px; /* Further reduce padding */
-    }
-  
-    .inspiration-text h1 {
-      font-size: 2rem; /* Smaller heading size */
-    }
-  
-    .inspiration-text p {
-      font-size: 0.8rem; /* Adjust text size */
-    }
-  
-    .inspiration-button {
-      padding: 8px 16px; /* Adjust button size */
-      font-size: 0.9rem; /* Smaller button text */
-    }
+}
+
+@media (max-width: 480px) {
+  .inspiration-text h1 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 480px) {
-    .inspiration {
-      padding: 15px; /* Minimal padding for very small screens */
-    }
-  
-    .inspiration-text h1 {
-      font-size: 1.8rem; /* Smaller heading size */
-    }
-  
-    .inspiration-text p {
-      font-size: 0.8rem; /* Compact text size */
-    }
-  
-    .inspiration-button {
-      padding: 6px 12px; /* Smallest button size */
-      font-size: 0.8rem; /* Smaller button text */
-    }
-  
-    .img-container img {
-      border-radius: 5px; /* Adjust border radius */
-    }
+
+  .inspiration-text p {
+    font-size: 0.9rem;
   }
-  
+
+  .inspiration-button {
+    padding: 8px 16px;
+  }
+}

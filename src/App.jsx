@@ -17,7 +17,7 @@ import Success from './components/Success/Success';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>

@@ -5,7 +5,7 @@ import All_products from '../components/All_products/All_products'
 import Warranty from '../components/Warranty/Warranty'
 
 const Shop = () => {
-  const [sortOrder, SetSortOrder] = useState('asc');
+  const [sortOrder, SetSortOrder] = useState([]);
   return (
     <div>
       <Banner />

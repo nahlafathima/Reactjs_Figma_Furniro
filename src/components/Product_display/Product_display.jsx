@@ -12,7 +12,7 @@ const Product_display = (props) => {
     const [isCartVisible, setIsCartVisible] = useState(false);
     const navigate = useNavigate();
 
-    // Handle adding item to cart
+ 
     const handleAddToCart = () => {
         if (selectedSize) {
             addToCart({ ...product, selectedSize });
@@ -32,6 +32,9 @@ const Product_display = (props) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
     
+      const handleCloseCart = () => {
+        setIsCartVisible(false);
+    };
     return (
         <div className="product-display-container">
             <div className="product-display-left">
@@ -81,6 +84,7 @@ const Product_display = (props) => {
                 
                 {isCartVisible && (
                     <div className="cart-dropdown">
+                        <button className="cart-close-button" onClick={handleCloseCart}>X</button>
                         <h2>Shopping Cart</h2>
                         <hr/>
                         {cart.length > 0 ? (
