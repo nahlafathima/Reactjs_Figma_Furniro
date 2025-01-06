@@ -109,7 +109,7 @@
   /* Responsive Design for .gallery-grid */
 @media (max-width: 1024px) {
     .gallery-grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets or medium screens */
+      grid-template-columns: repeat(8, 2fr); /* 3 columns for tablets or medium screens */
       padding-left: 5%; /* Adjust padding for balance */
       gap: 12px; /* Slightly smaller gap */
     }
@@ -126,11 +126,50 @@
     .category p {
       font-size: 1.2rem; /* Adjust font size for smaller screens */
     }
+    .item1 {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    
+    .item2 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    
+    .item3 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    
+    .item4 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    
+    .item5 {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    
+    .item6 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    .item7 {
+      grid-column: span 2;
+      grid-row: span 4;
+    }
+    
+    .item8 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
   }
   
   @media (max-width: 768px) {
     .gallery-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile screens */
+      grid-template-columns: repeat(8, 2fr); /* 2 columns for mobile screens */
       padding-left: 0; /* Remove extra padding for small screens */
       gap: 8px; /* Reduce the gap further */
     }
@@ -146,6 +185,45 @@
   
     .category p {
       font-size: 1rem; /* Adjust paragraph font size */
+    }
+    .item1 {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    
+    .item2 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    
+    .item3 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    
+    .item4 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    
+    .item5 {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    
+    .item6 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    .item7 {
+      grid-column: span 2;
+      grid-row: span 4;
+    }
+    
+    .item8 {
+      grid-column: span 2;
+      grid-row: span 1;
     }
   }
   

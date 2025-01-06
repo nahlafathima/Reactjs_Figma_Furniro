@@ -181,6 +181,7 @@ a:hover {
 
   .cart-count,
   .search,
+  .search-icon,
   .love {
     display: none;
   }
@@ -197,6 +198,7 @@ a:hover {
     font-size: 24px;
     cursor: pointer;
     color: black;
+    margin-right: 10px;
   }
 
   .icons-mobile i {
@@ -219,13 +221,14 @@ a:hover {
 
   .cart-count,
   .search,
+  .search-icon,
   .love {
     display: none;
   }
 
   .cart {
     display: block;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
   .menu {
@@ -245,6 +248,7 @@ a:hover {
 
   .cart-count,
   .search,
+  .search-icon,
   .love {
     display: none;
   }
@@ -271,6 +275,7 @@ a:hover {
 
   .cart-count,
   .search,
+  .search-icon,
   .love {
     display: none;
   }
